@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Link, Route, Switch } from 'react-router-dom';
+import { HashRouter, Link, Redirect, Route, Switch } from 'react-router-dom';
 import About from './About';
 import './App.css';
 import AppHeader from './AppHeader';
@@ -15,6 +15,9 @@ function App() {
           <Link to="/about">Projeto</Link>
         </AppHeader>
         <Switch>
+          <Route exact path="/" render={() => (
+            <Redirect to="/busca" />
+          )} />
           <Route path="/busca">
             <Busca />
           </Route>
