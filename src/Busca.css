@@ -1,0 +1,43 @@
+.Busca {}
+
+.Busca-heading {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.Busca-label {
+  font-weight: bold;
+}
+
+.Busca-input {
+  display: flex;
+}
+
+.Busca-input > * {
+  padding: 5px 10px;
+  font-size: 1.2em;
+  border: 1px solid #ddd;
+}
+
+.Busca-input input {
+  flex: 1 1 auto;
+  border-radius: 6px 0 0 6px;
+  border-right: 0 none;
+}
+
+.Busca-input input:focus,
+.Busca-input input:focus + button {
+  outline: none;
+  border-color: #678de4;
+}
+.Busca-input button:focus,
+.Busca-input input:focus + button {
+  outline: none;
+  background-color: #678de4;
+}
+
+.Busca-input button {
+  background-color: #ddd;
+  color: #fff;
+  border-radius: 0 6px 6px 0;
+  border-left: 0 none;
+}
